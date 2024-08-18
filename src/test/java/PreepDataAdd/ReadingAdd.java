@@ -23,7 +23,6 @@ public class ReadingAdd {
         CommonSelectorAdd.setPracticeDescription(driver,"Reading Description");
         CommonSelectorAdd.setEditorNote(driver,version);
 
-
         List<String> lines = FindCorrectLines.getSpecificLines(ReadingTextFilePath,2,3);
         driver.findElement(By.xpath("//button[@class='ql-bold']//*[name()='svg']\n")).click();
 
