@@ -6,21 +6,19 @@ import org.openqa.selenium.support.PageFactory;
 import utils.CommonSelectorAdd;
 
 public class WritingAdd {
-
     private WebDriver driver;
     LevelCreate levelCreate;
-
-   CommonSelectorAdd commonSelectorAdd = new CommonSelectorAdd(driver);
-
+    CommonSelectorAdd commonSelectorAdd;
 
 
-    public WritingAdd(WebDriver driver) throws InterruptedException {
+
+    public WritingAdd(WebDriver driver,String version,String WritingTextFilePath) throws InterruptedException {
         this.driver = driver;
+        levelCreate = new LevelCreate(driver,6);
 
-        levelCreate = new LevelCreate(driver,5);
-        CommonSelectorAdd.setPracticeName(driver,"Writing");
-        CommonSelectorAdd.setPracticeDescription(driver,"Writing");
-        CommonSelectorAdd.setEditorNote(driver,1);
+        commonSelectorAdd.setPracticeName(driver,"Writing");
+        commonSelectorAdd.setPracticeDescription(driver,"Writing");
+        commonSelectorAdd.setEditorNote(driver,version);
 
 
         PageFactory.initElements(driver, this);

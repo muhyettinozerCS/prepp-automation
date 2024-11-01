@@ -15,7 +15,7 @@ public class CommonSelectorAdd {
 
 
     @FindBy(xpath = "//div[@class='ql-editor ql-blank']")
-    private WebElement PracticeTextOption;
+    private WebElement practiceTextOptions;
     private static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 
     @FindBy(xpath = "//span[normalize-space()='Remove All Qs']")
@@ -24,16 +24,7 @@ public class CommonSelectorAdd {
     public WebElement AddOptionButton;
     @FindBy(xpath = "//span[normalize-space()='Remove Question']")
     public WebElement RemoveQuestionButton;
-    @FindBy(xpath = "//input[@id='input-107']")
-    public WebElement Question1;
-    @FindBy(xpath = "//input[@id='input-112']")
-    public WebElement Option1;
-    @FindBy(xpath = "//input[@id='input-118']")
-    public WebElement Option2;
-    @FindBy(xpath = "//input[@id='input-124']")
-    public WebElement Option3;
-    @FindBy(xpath = "//input[@id='input-130']")
-    public WebElement Option4;
+
     public static final String prefix = "//input[@id='";
     public static final String suffix = "']";
 
@@ -44,36 +35,36 @@ public class CommonSelectorAdd {
         PageFactory.initElements(driver, this);
     }
 
-    public static void setPracticeName(WebDriver driver, String practiceName) {
-
+    public  void setPracticeName(WebDriver driver, String practiceName) {
 
         String practiceXpath = generatePracticeXpath(    "practice-name");
-        System.out.println(practiceXpath);
+        System.out.println(practiceName);
 
         driver.findElement(By.xpath(practiceXpath)).sendKeys(practiceName);
 
 
     }
     //input[@id='practice-desc']
-    public static void setPracticeDescription(WebDriver driver, String practiceDescription) {
+    public  void setPracticeDescription(WebDriver driver, String practiceDescription) {
         String practiceXpath = generatePracticeXpath("practice-desc");
         driver.findElement(By.xpath(practiceXpath)).sendKeys(practiceDescription);
     }
     //input[@id='editor-note']
-    public static void setEditorNote(WebDriver driver, float editorNote) {
+    public  void setEditorNote(WebDriver driver, String editorNote) {
         String practiceXpath = generatePracticeXpath("editor-note");
         driver.findElement(By.xpath(practiceXpath)).sendKeys(editorNote + "");
 
     }
 
 
-    public static void setPracticeTextOption(WebDriver driver, String practiceTextOption) {
-        driver.findElement(By.xpath("//div[@class='ql-editor ql-blank']")).sendKeys(practiceTextOption);
+    public  void setPracticeTextOption(WebDriver driver, String practiceText) {
+//        driver.findElement(By.xpath("//div[@class='ql-editor ql-blank']")).sendKeys(practiceTextOption);
+        practiceTextOptions.sendKeys(practiceText);
 
     }
 
-    public static String generatePracticeXpath(String Value) {
-        return prefix + Value + suffix;
+    public static String generatePracticeXpath(String PracticeXpathValue) {
+        return prefix + PracticeXpathValue + suffix;
     }
 
 

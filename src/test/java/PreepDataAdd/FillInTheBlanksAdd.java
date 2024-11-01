@@ -8,20 +8,20 @@ public class FillInTheBlanksAdd {
 
     private WebDriver driver;
 
-    CommonSelectorAdd commonSelectorAdd = new CommonSelectorAdd(driver);
+    CommonSelectorAdd commonSelectorAdd;
 
     LevelCreate levelCreate;
-
 
 
     public FillInTheBlanksAdd(WebDriver driver) throws InterruptedException {
 
 
-        levelCreate = new LevelCreate(driver, 1);
+        levelCreate = new LevelCreate(driver, 2);
+        commonSelectorAdd = new CommonSelectorAdd(driver);
 
-//        commonSelectorAdd.PracticeDescription.sendKeys("Test");
-//        commonSelectorAdd.PracticeTextOption.sendKeys("Test");
-//        commonSelectorAdd.EditorNote.sendKeys("Test");
+        commonSelectorAdd.setPracticeName(driver, "Fill in the Blanks");
+        commonSelectorAdd.setPracticeDescription(driver, " Fill in the Blanks-Description");
+        commonSelectorAdd.setEditorNote(driver, "Test");
 //        commonSelectorAdd.PracticeName.sendKeys("Test");
     }
 }

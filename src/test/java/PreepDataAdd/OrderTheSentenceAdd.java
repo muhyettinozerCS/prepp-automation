@@ -13,38 +13,45 @@ public class OrderTheSentenceAdd {
 
     private WebDriver driver;
     LevelCreate levelCreate;
+    CommonSelectorAdd commonSelectorAdd;
+    QuestionAdd questionAdd;
+    FindCorrectLines findCorrectLines;
 
 
-    public OrderTheSentenceAdd(WebDriver driver, int version,String OrderTheSentenceTextFilePath) throws InterruptedException {
+    public OrderTheSentenceAdd(WebDriver driver, String version, String OrderTheSentenceTextFilePath) throws InterruptedException {
         this.driver = driver;
 
-        levelCreate = new LevelCreate(driver, 3);
-        CommonSelectorAdd.setPracticeName(driver, "Order the Sentence");
-        CommonSelectorAdd.setPracticeDescription(driver, "Order the Sentence Description");
-        CommonSelectorAdd.setEditorNote(driver, version);
-        int count = (FindCorrectLines.countLines(OrderTheSentenceTextFilePath) / 2);
-        System.out.println(count);
+        levelCreate = new LevelCreate(driver, 4);
+
+        commonSelectorAdd = new CommonSelectorAdd(driver);
+        findCorrectLines = new FindCorrectLines();
+
+        commonSelectorAdd.setPracticeName(driver, "Order the Sentence");
+        commonSelectorAdd.setPracticeDescription(driver, "Order the Sentence Description");
+        commonSelectorAdd.setEditorNote(driver, version);
+        int count = (findCorrectLines.countLines(OrderTheSentenceTextFilePath) / 2);
+
+        questionAdd = new QuestionAdd(driver);
 
         for (int i = 1; i <= count; i++) {
             QuestionAdd.clickAddQuestionButton(driver);
-            int wordCount = FindCorrectLines.countSlashesInLine(OrderTheSentenceTextFilePath, (i * 2) + 1);
+            int wordCount = findCorrectLines.countSlashesInLine(OrderTheSentenceTextFilePath, (i * 2) + 1);
             int wordCount1 = wordCount;
-            System.out.println(wordCount);
             while (wordCount > 4) {
 
-                QuestionAdd.clickAddOptionButton(driver, i);
+                questionAdd.clickAddOptionButton(driver, i);
                 --wordCount;
             }
             int c = 1;
             while (wordCount1 > 0) {
-                List<String> option = FindCorrectLines.getWordsListFromLine(OrderTheSentenceTextFilePath, i * 2 + 1);
-                QuestionAdd.setQuestionOption(driver, option.get(c - 1), i, c);
+                List<String> option = findCorrectLines.getWordsListFromLine(OrderTheSentenceTextFilePath, i * 2 + 1);
+                questionAdd.setQuestionOption(driver, option.get(c - 1), i, c);
+                System.out.println(i + ".question " + c + ".option " + option.get(c - 1));
                 --wordCount1;
                 ++c;
 
             }
         }
-
 //        commonSelectorAdd.AddOptionButton.click();
         PageFactory.initElements(driver, this);
     }

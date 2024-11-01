@@ -4,28 +4,24 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
 
-import java.io.*;
-import java.util.Arrays;
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import static Prepp_Login.Login.FilePathWords;
+import static Prepp_Login.Login.Keywords;
+
 public class WordReader {
 
     public static void main(String[] args) {
-        String filePath = "src/resources/5. Narrative Tenses.docx";
-        List<String> keywords = Arrays.asList(
-                "Vocabulary-Reading-1", "Vocabulary-MultipleChoices-1", "Vocabulary-ClozeTest-1",
-                "Grammar-MultipleChoices-1", "Grammar-MultipleChoices-2", "Grammar-ClozeTest-1",
-                "OrdertheSentence"
-        );
 
         // Process Word document
-        processWordDocument(filePath, keywords);
+        processWordDocument(FilePathWords, Keywords);
 
-        // Add block numbers to text file
-//        String textFilePath = "Continuous1Reading.txt";
-//        FindCorrectLines.addBlockNumbersToText(textFilePath,4);
+
     }
 
     public static void processWordDocument(String filePath, List<String> keywords) {

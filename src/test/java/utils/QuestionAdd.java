@@ -12,11 +12,12 @@ import java.nio.file.Paths;
 
 public class QuestionAdd {
     WebDriver driver;
+    CommonSelectorAdd commonSelectorAdd;
     public QuestionAdd(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    public static void SetQuestionAnswer(WebDriver driver, int i, String j) {
+    public  void SetQuestionAnswer(WebDriver driver, int i, String j) {
 
 
         String CorrectOptions = "-checkbox-1";
@@ -38,14 +39,15 @@ public class QuestionAdd {
 
                 break;
         }
-        String practiceXpath = CommonSelectorAdd.generatePracticeXpath("q-"+i+CorrectOptions);
+        String practiceXpath = commonSelectorAdd.generatePracticeXpath("q-"+i+CorrectOptions);
          driver.findElement(By.xpath(practiceXpath)).click();
     }
     //input[@id='q-2-option-1']
-    public static void setQuestionOption(WebDriver driver, String QuestionOption, int i, int j) {
+    public  void setQuestionOption(WebDriver driver, String QuestionOption, int i, int j) {
         String Options = "-option-" + j;
+        commonSelectorAdd = new CommonSelectorAdd(driver);
 
-            String practiceXpath = CommonSelectorAdd.generatePracticeXpath("q-"+i+Options);
+            String practiceXpath = commonSelectorAdd.generatePracticeXpath("q-"+i+Options);
             WebElement inputField = driver.findElement(By.xpath(practiceXpath));
 
             // Prepare text to paste
@@ -64,7 +66,7 @@ public class QuestionAdd {
 //        driver.findElement(By.xpath(practiceXpath)).sendKeys(QuestionOther + " ");
 
     }
-    public static void SetQuestionAdd(WebDriver driver, String QuestionOther,int QuestionNumber) {
+    public  void SetQuestionAdd(WebDriver driver, String QuestionOther,int QuestionNumber) {
             String practiceXpath = CommonSelectorAdd.generatePracticeXpath("question-"+QuestionNumber);
             WebElement inputField = driver.findElement(By.xpath(practiceXpath));
             // Prepare text to paste
@@ -82,16 +84,16 @@ public class QuestionAdd {
         // Find the element with the text "Add Question" and click it
         driver.findElement(By.xpath("//span[normalize-space()='Add Question']")).click();
     }
-    public static void clickAddOptionButton(WebDriver driver, int questionNumber) {
-        String practiceXpath = "//*[@id=\"add-option-q-";
-        String questionXpath = "-btn\"]";
-        System.out.println(practiceXpath+questionNumber+questionXpath);
-        driver.findElement(By.xpath(practiceXpath+questionNumber+questionXpath)).click();
+    public  void clickAddOptionButton(WebDriver driver, int questionNumber) {
+        String prefix = "//*[@id=\"add-option-q-";
+        String suffix = "-btn\"]";
+//        System.out.println(practiceXpath+questionNumber+questionXpath);
+        driver.findElement(By.xpath(prefix+questionNumber+suffix)).click();
     }
 
 
 
-    public static String QuestionAndOptionTextAfterPart(String filePath, int questionNumber, String OptionKey) {
+    public  String QuestionAndOptionTextAfterPart(String filePath, int questionNumber, String OptionKey) {
         try {
             // Dosya içeriğini oku
             String fullText = new String(Files.readAllBytes(Paths.get(filePath)));

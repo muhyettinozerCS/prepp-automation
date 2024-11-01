@@ -1,0 +1,121 @@
+Grammar-MultipleChoices-2
+1. Since the company's inception, the team __________ tirelessly on various projects, and they __________ significant milestones in their pursuit of innovation so far.
+A) has been working / have accomplished
+correct 
+B) worked / are accomplishing
+C) has working / accomplished
+D) work / have accomplished
+2. The scientist __________ climate change for years, and during this time, she __________ substantial data that underscores the urgency of addressing environmental issues.
+A) research / is collecting
+B) researched / collects
+C) have been researching / has collected
+D) has been researching / has collected
+correct 
+3. By the time they __________ new technology to the market, the team __________ countless hours to its development, ensuring it meets the highest standards.
+A) will introduced / devoted
+B) introduced / devotes
+C) have introduced / has devoted
+correct 
+D) has introduced / is devoting
+4. How long __________ you __________ in the industry before you decided to establish your own business?
+A) have / worked
+correct 
+B) did / work
+C) do / work
+D) will / work
+5. The team __________ cutting-edge software for several months, and they __________ significant strides in enhancing user experience.
+A) is developing / make
+B) has developed / made
+correct 
+C) developed / are making
+D) develop / have made
+6. Throughout their careers, the researchers __________ on cross-cultural studies, and their findings __________ to a deeper understanding of cultural dynamics today.
+A) focused / contributed
+B) are focusing / contributes
+C) have focused / contribute
+correct 
+D) focuses / have contributed
+7. The artist __________ a series of paintings recently, each of which __________ the intricate interplay between tradition and modernity.
+A) creates / reflects
+B) has created / reflects
+correct 
+C) is creating / reflected
+D) has been create / is reflecting
+8. By the time they __________ the construction project, the architects __________ numerous challenges, demonstrating their exceptional problem-solving skills.
+A) will complete / have overcome
+B) complete / overcame
+C) have completed / overcome
+correct 
+D) are completing / overcomes
+9. The athlete __________ diligently for the upcoming competition, and her rigorous regimen __________ with improved performance and endurance.
+A) have trained / pays off
+B) is training / paid off
+C) has been training / is paying off
+correct 
+D) train / will pay off
+10. How many countries __________ you __________ so far, and what stood out as the most memorable experience during your travels?
+A) has / visited
+B) have / visited
+correct 
+C) does / visit
+D) do / visit
+11. The team __________ on the project. It __________ three months ago, and they __________ remarkable progress so far.
+A) has been working / was initiated / have made
+correct 
+B) worked / initiated / made
+C) have been working / initiated / make
+D) work / has initiated / made
+12. How many languages __________ you __________ since you __________ university, and which one __________ the most challenging?
+A) do / study / have started / was
+B) did / study / start / are
+C) have/ studied / started / is
+correct 
+D) do / studied / started / is
+13. The scientist __________ years to researching alternative energy sources, __________ numerous papers, and __________ recognition for her contributions.
+A) devoted / published / received
+B) has devoted / published / has received
+correct 
+C) is not devoting / publishes / receives
+D) devote / publish / receive
+14. The company __________ in the market and they __________ it two decades ago, and recently, it __________ a leader in its industry.
+A) operates / established / has become
+correct 
+B) is operating / established / became
+C) has been operating / was establishing / becomes
+D) operated / has established / will become
+15. Throughout the year, the research team __________ data, __________ trends, and __________ several research papers.
+A) collected / analyzes / publish
+B) has collected / analyzing / published
+C) has been collecting / analyzing / has published
+correct 
+D) collect / analyzes / published
+16. The students __________ in various extracurricular activities since then and they __________ in the university, and they __________ valuable skills.
+A) participates / enrolled / gained
+B) have been participating / have enroll / gain
+C) participates / were enrolling / were gaining
+D) have participated / enrolled / gained
+correct 
+17. The company __________ a new software upgrade for 2 months, __________ it across all platforms, and it __________ users with enhanced features.
+A) has been developing / implementing / provides
+correct 
+B) is developing / implemented / provided
+C) develops / implements / provides
+D) developed / has implement / have provided
+18. Over the years, the organization __________ significant funds, __________ various causes, and it __________ the lives of many recently.
+A) raised / supported / impacted
+B) has raised / supported / has impacted
+correct 
+C) raises / is supporting / impacts
+D) raises / supports / impact
+19. How many projects __________ you __________ since you __________the company, and which one __________ the most challenging one?
+A) have / completed / joined / was
+correct 
+B) did / complete / joined / stands
+C) do / complete / have not joined / stood
+D) has / completed / join / stood
+20. Throughout the years, language enthusiasts __________ various linguistic patterns, and many __________ on a mission to learn languages that people __________ in their regions. They __________ countless hours to mastering these diverse linguistic forms for many years, and their efforts have resulted in a more interconnected global linguistic landscape.
+A) have studied / embarked / do not traditionally study / have dedicated
+correct 
+B) studied / have embarked / are not traditionally study / dedicated
+C) are studying / embark / have not traditionally study / dedicate
+D) study / embarked on / not traditionally studied / dedicate

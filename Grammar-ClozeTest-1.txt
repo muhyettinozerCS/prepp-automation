@@ -1,0 +1,92 @@
+0Grammar-ClozeTest-1
+0Online language learning tools (1) __________ popular over the past decade, providing individuals with convenient and flexible ways to enhance their language skills since then. Many users (2) __________ these platforms to broaden their linguistic abilities and (3) __________ their proficiency in various languages. One key advantage of these tools is that learners(4) __________ the opportunity to practice regularly. Through interactive exercises, quizzes, and virtual conversations, users (5) __________ a dynamic learning experience that (6) __________ them to apply theoretical knowledge in practical situations so far. Furthermore, these platforms(7) __________ a vast array of resources. Users (8) __________ access to video lessons, interactive games, and live tutoring sessions, allowing them to tailor their learning experience to their preferences. The diversity of materials (9) __________ learners to explore different aspects of language, from grammar rules to colloquial expressions. Users (10) __________ increasingly the significance of integrating technology into language learning. The convenience of accessing lessons anytime and anywhere (11)__________ learners a chance to manage their schedules effectively. Those who (12) __________ these tools consistently (13) __________ substantial progress in their language proficiency. However, it's crucial to note that successful language learning (14) __________ not solely on the tools themselves but also on the learner's commitment and consistency. Those who (15) __________ a disciplined approach to their studies are more likely to achieve lasting results.
+1.
+1A) becomes
+1B) have become
+1correct 
+1C) becoming
+1D) became
+2.
+2A) utilizing
+2B) utilized
+2C) have utilized
+2correct 
+2D) utilizes
+3.
+3A) refining
+3B) refine
+3C) refined
+3D) have refined
+3correct 
+4.
+4A) have
+4correct 
+4B) has had
+4C) had
+4D) having
+5.
+5A) experience
+5B) experiencing
+5C) have experienced
+5correct 
+5D) has experienced
+6.
+6A) enables
+6B) enabling
+6C) enabled
+6D) has enabled
+6correct 
+7.
+7A) offers
+7B) offer
+7correct 
+7C) offering
+7D) offered
+8.
+8A) have
+8correct 
+8B) has
+8C) has
+8D) had
+9.
+9A) allowed
+9B) allow
+9C) allows
+9correct 
+9D) allowing
+10.
+10A) has recognize
+10B) have recognized
+10correct 
+10C) have recognizing
+10D) recognized
+11.
+11A) gives
+11correct 
+11B) gave
+11C) given
+11D) has give
+12.
+12A) using
+12B) uses
+12C) used
+12D) have been using
+12correct 
+13.
+13A) making
+13B) make
+13C) makes
+13D) have made
+13correct 
+14.
+14A) depends
+14correct 
+14B) depend
+14C) depended
+14D) depending
+15.
+15A) maintained
+15B) maintains
+15C) maintain
+15correct 
+15D) maintaining

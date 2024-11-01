@@ -11,15 +11,17 @@ public class Chapters {
 
     @FindBy(xpath = " //a[@href='/chapter']")
     private WebElement chapterID;
-   public Chapters(WebDriver driver){
-       System.out.println("Chapters constructor running");
-       this.driver = driver;
-       PageFactory.initElements(driver, this);
-       chapterID.click();
+
+    public Chapters(WebDriver driver) {
+        System.out.println("Chapters constructor running");
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
 
 
+    }
 
-   }
 
-
+    public void chapterClick() {
+        chapterID.click();
+    }
 }

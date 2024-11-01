@@ -6,7 +6,7 @@ import java.util.List;
 
 public class FindCorrectLines {
 
-    public static void main(String[] args) {
+    public  void main(String[] args) {
         String textFilePath = "Continuous1MultipleChoices.txt"; // Path to the text file
         int questionNumber = 5; // Example: Input the desired question number here
 
@@ -19,7 +19,7 @@ public class FindCorrectLines {
             System.out.println("Correct answer not found for question " + questionNumber);
         }
     }
-    public static List<String> getSpecificLines(String textFilePath, int startLine, int endLine) {
+    public  List<String> getSpecificLines(String textFilePath, int startLine, int endLine) {
         List<String> lines = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(new File(textFilePath)))) {
@@ -42,7 +42,7 @@ public class FindCorrectLines {
         return lines;
     }
 
-    public static int findCorrectLine(String textFilePath, int questionNumber) {
+    public  int findCorrectLine(String textFilePath, int questionNumber) {
         try (BufferedReader reader = new BufferedReader(new FileReader(new File(textFilePath)))) {
             String expectedCorrect = questionNumber + "correct";
             String line;
@@ -62,7 +62,7 @@ public class FindCorrectLines {
         }
       return -1;
     }
-    public static int countLines(String textFilePath) {
+    public  int countLines(String textFilePath) {
         int lineCount = 0;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(new File(textFilePath)))) {
@@ -75,7 +75,7 @@ public class FindCorrectLines {
 
         return lineCount;
     }
-    public static List<String> getWordsListFromLine(String textFilePath, int lineNumber) {
+    public  List<String> getWordsListFromLine(String textFilePath, int lineNumber) {
         List<String> words = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(new File(textFilePath)))) {
@@ -99,7 +99,7 @@ public class FindCorrectLines {
     }
 
     // Belirli bir satırdaki slashler arasındaki kelime sayısını döndürür
-    public static int countSlashesInLine(String textFilePath, int lineNumber) {
+    public  int countSlashesInLine(String textFilePath, int lineNumber) {
         int slashCount = 0;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(new File(textFilePath)))) {
@@ -120,7 +120,7 @@ public class FindCorrectLines {
     }
 
 
-    public static String getAnswerFromLineNumber(int lineNumber) {
+    public  String getAnswerFromLineNumber(int lineNumber) {
         return switch (((lineNumber - 2) % 6) - 2) { // Assuming answers A, B, C, D repeat every 4 lines
             case 0 -> "A";
             case 1 -> "B";
@@ -129,7 +129,7 @@ public class FindCorrectLines {
             default -> null;
         };
     }
-    public static void addBlockNumbersToText(String textFilePath, int blockNumbers) {
+    public  void addBlockNumbersToText(String textFilePath, int blockNumbers) {
         File originalFile = new File(textFilePath);
         File tempFile = new File("temp_" + originalFile.getName());
 
